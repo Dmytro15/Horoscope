@@ -1,0 +1,38 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	overflow-x: hidden
+	font-family: 'RobotoThin100', sans-serif
+	font-weight: 100
+	font-style: normal
+	.mainHeader
+		&::after
+			content: ""
+			height: 5px
+			width: 100%
+			background-color: #3498DB
+		.header
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			position: relative
+			background-size: 100%
+			background-attachment: fixed
+			background-repeat: no-repeat
+			padding: 200px
+			p
+				font-size: 60px
+				color: #fff
+				margin-top: 15%
+				margin-bottom: 15%
+				animation-duration: 1.5s
+
+
+.hidden
+	display: none
