@@ -1,5 +1,5 @@
 $(function() {
-	$(".header p").animated("fadeInDownBig");
+	$(".header h1").animated("fadeInDownBig");
 
 	$(window).scroll(function () {
 		// значение, на которое сместилась страница при прокрутке

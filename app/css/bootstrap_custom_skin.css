@@ -57,21 +57,22 @@
 /* CSS стили для мобильных устройств */
 /* Цвет рамки у кнопки, которая открывает меню */
 .navbar-default .navbar-toggle {
-    border-color: transparent;
+    border-color: #2C3E50;
 }
 /* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #DDD;
+    background-color: transparent;
 }
 /* Цвет полосочек в кнопочке, которая открывает меню */
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #2980B9;
+    background-color: #2C3E50;
 }
 
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
+    z-index: 2;
 }
 
 .dropdown-menu {
@@ -99,3 +100,7 @@
     background-color: #2980B9;
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+ color: #fff;
+}
